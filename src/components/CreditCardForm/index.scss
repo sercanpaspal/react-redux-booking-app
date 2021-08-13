@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+@import 'react-credit-cards/lib/styles.scss';
+
+.credit-card-form {
+    .__card-preview {
+        margin-bottom: 40px;
+    }
+    .__row {
+        width: 100%;
+        display: flex;
+        margin: 0px -5px;
+        .__col {
+            flex: 1;
+            padding: 0px 5px;
+        }
+    }
+}   

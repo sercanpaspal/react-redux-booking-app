@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.loader-content {
+    padding: 20px;
+    text-align: center;
+    svg {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        fill: $primary-color;
+    }   
+}

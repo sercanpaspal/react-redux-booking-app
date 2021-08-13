@@ -1,0 +1,13 @@
+@import 'normalize.css';
+@import 'reset';
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  color: $primary-color;
+  background-color: $surface-lightest-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+

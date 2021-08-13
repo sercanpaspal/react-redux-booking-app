@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.checkout-page {
+    .__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        .__payment-section {
+            flex: 3;
+            border: 1px solid $surface-color;
+            background-color: $surface-lighter-color;
+            padding: 20px;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        .__preview-section {
+            flex: 2;
+            border: 1px solid $surface-color;
+            padding: 20px;
+            border-radius: 4px;
+            background-color: $surface-lighter-color;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    .checkout-page {
+        .__content {
+            flex-direction: column-reverse;
+            .__payment-section {
+                width: 100%;
+                flex: auto;
+                margin-right: 0px;
+            }
+            .__preview-section {
+                width: 100%;
+                flex: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

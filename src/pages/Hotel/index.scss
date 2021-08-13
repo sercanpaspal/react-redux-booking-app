@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.hotel-page {
+    .__top {
+        background-color: $surface-lighter-color;
+        border: 1px solid $surface-color;
+        padding: 20px;
+        margin: 20px 0px;
+        ul {
+            margin-top: 10px;
+            display: flex;
+            li {
+                margin-right: 20px;
+                strong {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

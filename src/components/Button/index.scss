@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.button {
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    color: $secondary-inner-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover {
+        background-color: $secondary-darker-color;
+    }
+    &:active {
+        background-color: $secondary-darkest-color;
+    }
+    &:disabled {
+        &:hover {
+            background-color: $secondary-color;
+        }
+        opacity: .4;
+    }
+}

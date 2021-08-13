@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.footer {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: $surface-lighter-color;
+    border: 1px solid $surface-color;
+    border-radius: 5px;
+    justify-content: space-between;
+}

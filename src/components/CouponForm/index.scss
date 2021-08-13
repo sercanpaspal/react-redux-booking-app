@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.coupon-form {
+    background-color: $surface-lightest-color;
+    border: 1px solid $surface-color;
+    border-radius: 4px;
+    padding: 10px;
+    > div {
+        display: flex;
+        align-items: flex-end;
+        .form-field {
+            margin: 0;
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+    }
+    small {
+        display: block;
+        font-size: 14px;
+        margin-top: 4px;
+        color: $danger-color;
+    }
+}

@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.radio-list {
+    > label {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid $surface-darker-color;
+        margin-bottom: 12px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin-right: 12px;
+            margin-bottom: 12px;
+            label {
+                cursor: pointer;
+                transition: .1s all;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid $surface-color;
+            }
+            [type="radio"]:checked + label {
+                border: 1px solid $secondary-color;
+                background-color: $secondary-color;
+                color: $secondary-inner-color;
+            }
+            [type="radio"] {
+                position: absolute;
+                left: -9999px;
+            }
+        }
+    }
+}

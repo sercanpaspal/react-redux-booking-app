@@ -1,0 +1,21 @@
+.form-field {
+    margin-bottom: 16px;
+    label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 500;
+    }
+
+    input:not([aria-autocomplete="list"]) {
+        display: block;
+        width: 100%;
+        padding: 5px 10px;
+        min-height: 38px;
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 4px;
+        &:disabled {
+            opacity: .4;
+        }
+    }
+}

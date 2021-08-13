@@ -1,0 +1,11 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .__container {
+        width: 1200px;
+        padding: 20px;
+        max-width: 100%;
+    }
+}
