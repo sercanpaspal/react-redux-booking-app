@@ -27,7 +27,9 @@ const CheckoutPriceCard = ({
 
   const subTotal = roomPrice * adult * day
 
-  const price = subTotal + (priceRate / 100 + 1) - discount
+  const scenicCost = (subTotal * priceRate) / 100
+
+  const price = subTotal + scenicCost - discount
 
   useEffect(() => updateReservation({ price }), [price])
 
