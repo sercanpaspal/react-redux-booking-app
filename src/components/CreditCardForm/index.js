@@ -5,6 +5,7 @@ import FormField from '../FormField'
 import Select from 'react-select'
 import { connect } from 'react-redux'
 import Cards from 'react-credit-cards'
+import InputMask from '../InputMask'
 import { creditCardMonths, creditCardYears } from '../../constants/options'
 import { CreditCardFormValidationSchema } from '../../constants/formValidationSchemas'
 import './index.scss'
@@ -64,6 +65,10 @@ const CreditCardForm = ({ reservation, saveReservation, formRef }) => {
                   name="card_number"
                   label="Kartın Numarası"
                   type="text"
+                  value={values.card_number}
+                  mask={/(\d{4})/}
+                  onChange={(val) => setFieldValue('card_number', val)}
+                  component={InputMask}
                 />
               </div>
             </div>
