@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   loading: false,
-  data: JSON.parse(localStorage.getItem('coupon')) || {},
+  data: {},
   error: null,
 }
 
