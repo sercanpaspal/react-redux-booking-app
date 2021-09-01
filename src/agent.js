@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://5f6d939160cf97001641b049.mockapi.io/tkn',
+  baseURL: 'https://61277ddac2e8920017bc0d01.mockapi.io/hotel-reservation/v1',
 })
 
 api.interceptors.response.use((response) => response.data)
