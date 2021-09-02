@@ -7,7 +7,7 @@ import {
 
 const initialState = {
   loading: false,
-  data: JSON.parse(localStorage.getItem('hotel')) || {},
+  data: {},
   error: null,
 }
 
